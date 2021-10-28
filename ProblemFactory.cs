@@ -16,6 +16,7 @@ namespace euler_practicing
             themProblems.Insert(3, new LargestPrimeFactor());
             themProblems.Insert(4, new LargestPalindromeProduct());
             themProblems.Insert(5, new SmallestMultiple());
+            themProblems.Insert(6, new SumSquareDifferences());
         }
         public Problem GetProblem(int key)
         {
