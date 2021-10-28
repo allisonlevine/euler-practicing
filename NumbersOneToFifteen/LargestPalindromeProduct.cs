@@ -3,7 +3,6 @@
 namespace NumbersOneToFifteen{
     public class LargestPalindromeProduct: euler_practicing.Problem{
         private readonly int _problemNumber;
-        private string _answer;
 
         public LargestPalindromeProduct(){
             _problemNumber = 4;

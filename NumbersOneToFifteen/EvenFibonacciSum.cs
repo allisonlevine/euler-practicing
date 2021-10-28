@@ -3,7 +3,6 @@
 namespace NumbersOneToFifteen{
     public class EvenFibonacciSum: euler_practicing.Problem{
         private readonly int _problemNumber;
-        private string _answer;
 
         public EvenFibonacciSum(){
             _problemNumber = 2;
