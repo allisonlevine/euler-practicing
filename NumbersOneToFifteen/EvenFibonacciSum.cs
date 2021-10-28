@@ -13,10 +13,10 @@ namespace NumbersOneToFifteen{
             get { return _problemNumber; }
         }
         public override string Answer{
-            get { return findThoseNumbers(); }
+            get { return FindThoseNumbers(); }
         }
 
-        private string findThoseNumbers(){
+        private string FindThoseNumbers(){
             int total = 0;
             int a = 0;
             int b = 1;

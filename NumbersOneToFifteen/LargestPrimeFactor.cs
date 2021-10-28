@@ -5,7 +5,6 @@ using System;
 namespace NumbersOneToFifteen{
     public class LargestPrimeFactor: euler_practicing.Problem{
         private readonly int _problemNumber;
-        private string _answer;
 
         public LargestPrimeFactor(){
             _problemNumber = 3;
@@ -15,7 +14,7 @@ namespace NumbersOneToFifteen{
             get { return _problemNumber; }
         }
         public override string Answer{
-            get { return findThatNumber(); }
+            get { return FindThatNumber(); }
         }
 
         private bool numberIsPrime(long number){
@@ -35,7 +34,7 @@ namespace NumbersOneToFifteen{
             return true;
         }
 
-        private string findThatNumber(){
+        private string FindThatNumber(){
             long thatBigNumber = 600851475143;
             long start = 2;
             while(start * start <= thatBigNumber){

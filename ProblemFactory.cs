@@ -14,6 +14,8 @@ namespace euler_practicing
             themProblems.Insert(1, new MultipleOfThreeOrFive());
             themProblems.Insert(2, new EvenFibonacciSum());
             themProblems.Insert(3, new LargestPrimeFactor());
+            themProblems.Insert(4, new LargestPalindromeProduct());
+            themProblems.Insert(5, new SmallestMultiple());
         }
         public Problem GetProblem(int key)
         {

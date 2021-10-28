@@ -3,7 +3,6 @@
 namespace NumbersOneToFifteen{
     public class MultipleOfThreeOrFive: euler_practicing.Problem{
         private readonly int _problemNumber;
-        private string _answer;
 
         public MultipleOfThreeOrFive(){
             _problemNumber = 1;

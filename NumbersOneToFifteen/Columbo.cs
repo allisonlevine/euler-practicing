@@ -3,7 +3,6 @@ namespace NumbersOneToFifteen{
     public class Columbo: euler_practicing.Problem
     {
         private readonly int _problemNumber;
-        private string _answer;
 
         public Columbo(){
             _problemNumber = 0;
