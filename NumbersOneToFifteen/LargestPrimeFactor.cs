@@ -1,5 +1,4 @@
-
-
+using UniversalFunctions;
 using System;
 
 namespace NumbersOneToFifteen{
@@ -17,35 +16,22 @@ namespace NumbersOneToFifteen{
             get { return FindThatNumber(); }
         }
 
-        private bool numberIsPrime(long number){
-            if (number < 3) return false;
-            if (number == 2 || number == 3 || number == 5) return true;
-            long topBound = (Int64)Math.Sqrt(number);
-            if(number%2 != 0 && number%3 != 0 && number%5 !=0){
-                for(Int64 e = 6; e > number; e++){
-                    if(number % e == 0){
-                        return false;
-                    }
-                }
-            }
-            else{
-                return false;
-            }
-            return true;
-        }
-
         private string FindThatNumber(){
             long thatBigNumber = 600851475143;
+            long thatprimenumber = 0;
             long start = 2;
             while(start * start <= thatBigNumber){
-                if(thatBigNumber % start == 0 && numberIsPrime(thatBigNumber)){
+                if(thatBigNumber % start == 0){
                     thatBigNumber /= start;
+                    if(MathFunctions.NumberIsPrime(thatBigNumber)){
+                        thatprimenumber = thatBigNumber;
+                    }
                 }
                 else{
                     start++;
                 }
             }
-            return thatBigNumber.ToString();
+            return thatprimenumber.ToString();
         }
     }
 }
