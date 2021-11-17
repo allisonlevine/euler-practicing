@@ -19,6 +19,7 @@ namespace euler_practicing
             themProblems.Insert(6, new SumSquareDifferences());
             themProblems.Insert(7, new That10001stPrime());
             themProblems.Insert(8, new LargestProductInASeries());
+            themProblems.Insert(9, new SpecialPythagoreanTriplet());
         }
         public Problem GetProblem(int key)
         {
