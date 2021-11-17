@@ -28,7 +28,7 @@ namespace NumbersOneToFifteen{
                     int start = 0;
                     int numbLength = newNumber.Length - 1;
                     int newCombined = firstNumber * secondNumber;
-                    if(ThatsAPal(newNumber, start, numbLength) && newCombined >= oldCombined){
+                    if(UniversalFunctions.StringFunctions.ThatsAPal(newNumber, start, numbLength) && newCombined >= oldCombined){
                         goodFirst = firstNumber;
                         goodSecond = secondNumber;
                         oldCombined = firstNumber * secondNumber;
@@ -40,18 +40,6 @@ namespace NumbersOneToFifteen{
             return oldCombined.ToString();
         }
 
-        private bool ThatsAPal(string newNumber, int start, int numbLength)
-        {
-            while (start < numbLength)
-            {
-                if (newNumber[start] != newNumber[numbLength])
-                {
-                    return false;
-                }
-                start++;
-                numbLength--;
-            }
-            return true;
-        }
+
     }
 }
